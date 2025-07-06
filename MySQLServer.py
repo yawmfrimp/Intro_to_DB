@@ -5,10 +5,10 @@ try:
     mydb = mysql.connector.connect(
         host = 'localhost',
         user = 'root',
-        password = 'Number#one',
+        password = 'password',
         database = 'world'
     )
-except BaseException as e:
+except mysql.connector.Error as e:
     print(e)
     sys.exit()
     
